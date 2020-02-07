@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0040)https://homepages.cwi.nl/~buurlage/lcsc/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="generator" content="pandoc">
+  <title>Laboratory Class Scientific Computing (2018) WISM454</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="./Laboratory Class Scientific Computing (2018) WISM454_files/pandoc.css" type="text/css">
+</head>
+<body>
+<div id="header">
+<h1 class="title">Laboratory Class Scientific Computing (2018) WISM454</h1>
+</div>
+<h2 id="overview">Overview</h2>
+<p><em>Utrecht University</em>, WISM454</p>
+<ul>
+<li><strong>Instructor</strong>: Jan-Willem Buurlage (CWI) &lt;j.buurlage(at)cwi.nl&gt;</li>
+<li><strong>When</strong>: Wednesday 13:15 - 17:00</li>
+<li><strong>Where</strong>: BBG 112 CLZ</li>
+</ul>
+<p>Each week consists of two hours of lectures (theory, C++), followed by two hours for working on exercises.</p>
+<h2 id="schedule">Schedule</h2>
+<table style="width:94%;">
+<colgroup>
+<col width="18%">
+<col width="76%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Date</th>
+<th>Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>07-02-2018</p></td>
+<td><ul>
+<li>Course overview, topics, grading etc.</li>
+<li>Random number generation (I), LCRNG</li>
+<li>C++: Basic introduction.</li>
+<li>Setting up a development environment</li>
+<li><strong>Exs.:</strong> set up system, 2.1, 2.2 and 2.6</li>
+<li><strong>Read:</strong> [LN] 2.1 - 2.3, [BS] 2.1 - 2.2</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><p>14-02-2018</p></td>
+<td><ul>
+<li>Random number generation (II): Non-uniform distributions, statistical tests,</li>
+<li>C++: arrays, pointers, classes.</li>
+<li><strong>Exs.:</strong> UNIX intro, 2.9, 2.10</li>
+<li><strong>Hand-in</strong>: 2.7, 2.8</li>
+<li><strong>Read:</strong> [LN] 2.4 - 2.5, [BS] 2.3 - 3.2</li>
+<li>Slides: <a href="https://homepages.cwi.nl/~buurlage/lcsc/slides_week2.pdf">Theory</a>, <a href="https://homepages.cwi.nl/~buurlage/lcsc/slides_week2_cpp.pdf">C++</a></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><p>21-02-2018</p></td>
+<td><ul>
+<li>Random number generation (III): Advanced RNGs, Xorshift, Mersenne Twister</li>
+<li>C++: polymorphism (II), templates</li>
+<li><strong>Exs.:</strong> 2.12, 2.13</li>
+<li><strong>Read:</strong> [LN] 2.6, [BS] 3.3 - 3.4</li>
+<li>Slides: <a href="https://homepages.cwi.nl/~buurlage/lcsc/slides_week3.pdf">Theory</a>, <a href="https://homepages.cwi.nl/~buurlage/lcsc/slides_week3_cpp.pdf">C++</a></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><p>28-02-2018</p></td>
+<td><ul>
+<li>C++: the standard library</li>
+<li><strong>Read:</strong> [BS] Chapter 4</li>
+<li>Slides: <a href="https://homepages.cwi.nl/~buurlage/lcsc/slides_week4_cpp.pdf">C++</a></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><p>07-03-2018</p></td>
+<td><ul>
+<li><em>JB away (SIAM PP18, Tokyo)</em></li>
+<li><strong>Extra tutorial</strong>: finish RNG library</li>
+<li><em>Bart de Leeuw (UU)</em></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><p>14-03-2018</p></td>
+<td><ul>
+<li><em>JB away (SIAM PP18, Tokyo)</em></li>
+<li>Monte Carlo methods (I)</li>
+<li>C++: <code>std::function</code>, anonymous functions, smart pointers</li>
+<li><strong>Exs.:</strong> 3.4</li>
+<li><strong>Read:</strong> [LN] 3.1 - 3.2</li>
+<li><strong>Hand-in</strong>: 3.1, 3.2, 3.3</li>
+<li><em>Tom Bannink (CWI)</em></li>
+<li>Slides: <a href="https://homepages.cwi.nl/~buurlage/lcsc/slides_week6.pdf">Theory</a>, <a href="https://homepages.cwi.nl/~buurlage/lcsc/slides_week6_cpp.pdf">C++</a></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><p>21-03-2018</p></td>
+<td><ul>
+<li>Monte Carlo methods (II)</li>
+<li>C++: Copy/move, overloading, operators</li>
+<li><strong>Exs.:</strong> 3.8</li>
+<li><strong>Read:</strong> [LN] 3.3, [BS] 17, 18, 19</li>
+<li>Slides: <a href="https://homepages.cwi.nl/~buurlage/lcsc/slides_week7.pdf">Theory</a>, <a href="https://homepages.cwi.nl/~buurlage/lcsc/slides_week7_cpp.pdf">C++</a></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><p>28-03-2018</p></td>
+<td><ul>
+<li>C++: <code>&lt;chrono&gt;</code>, TestU01</li>
+<li>Work on RNG / MC and Report I</li>
+<li>Slides: <a href="https://homepages.cwi.nl/~buurlage/lcsc/slides_week8_cpp.pdf">C++</a></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><p>04-04-2018</p></td>
+<td><ul>
+<li>C++: <code>&lt;random&gt;</code> overview</li>
+<li>Work on RNG / MC and Report I</li>
+<li>Slides: <a href="https://homepages.cwi.nl/~buurlage/lcsc/slides_week9_cpp.pdf">C++</a></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><p>11-04-2018</p></td>
+<td><p><em>No lecture</em></p></td>
+</tr>
+<tr class="odd">
+<td><p>16-04-2018</p></td>
+<td><p><strong>Deadline:</strong> Report I</p></td>
+</tr>
+<tr class="even">
+<td><p>18-04-2018</p></td>
+<td><ul>
+<li>Genetic Algorithms (I)</li>
+<li>Slides: <a href="https://homepages.cwi.nl/~buurlage/lcsc/slides_week11.pdf">Theory</a></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><p>25-04-2018</p></td>
+<td><ul>
+<li>Genetic Algorithms (II)</li>
+<li>C++: Advanced CMake</li>
+<li><strong>Exs.:</strong> 4.7, 4.9, 4.11</li>
+<li><strong>Hand-in</strong>: 4.10+ (see slides)</li>
+<li><strong>Read:</strong> [LN] 4.1 - 4.3.2</li>
+<li>Slides: <a href="https://homepages.cwi.nl/~buurlage/lcsc/slides_week12.pdf">Theory</a>, <a href="https://homepages.cwi.nl/~buurlage/lcsc/slides_week12_cpp.pdf">C++</a></li>
+<li><a href="https://github.com/jwbuurlage/lcsc-cmake-example" class="uri">https://github.com/jwbuurlage/lcsc-cmake-example</a></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><p>02-05-2018</p></td>
+<td><ul>
+<li>Other optimization methods</li>
+<li>Slides: <a href="https://homepages.cwi.nl/~buurlage/lcsc/slides_week13.pdf">Theory</a></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><p>09-05-2018</p></td>
+<td><ul>
+<li>Travelling salesman and variants</li>
+<li>Slides: <a href="https://homepages.cwi.nl/~buurlage/lcsc/slides_week14.pdf">Theory</a></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><p>16-05-2018</p></td>
+<td><ul>
+<li>Knapsack and variants</li>
+<li>Slides: <a href="https://homepages.cwi.nl/~buurlage/lcsc/slides_week15.pdf">Theory</a></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><p>23-05-2018</p></td>
+<td><ul>
+<li>(Tutorial)</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><p>30-05-2018</p></td>
+<td><ul>
+<li>(Tutorial)</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><p>06-06-2018</p></td>
+<td><ul>
+<li><em>No class</em></li>
+<li><em>JB away (SIAM IS18, Bologna)</em></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><p>13-06-2018</p></td>
+<td><ul>
+<li>(Tutorial)</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><p>20-06-2018</p></td>
+<td><p><strong>Deadline:</strong> Report II</p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="exercises-and-reports">Exercises and reports</h2>
+<p>Your reports should contain:</p>
+<ul>
+<li>Stand-alone treatment of the relevant theory.</li>
+<li>Results of numerical experiments.</li>
+<li>Description of your software library, with discussions on usage and design choices.</li>
+</ul>
+<p>In addition, all exercises listed in the schedule, except those marked <em>hand-in</em> or <em>optional</em>, are expected to be treated in your reports. Do not refer to them explicitely, but rather make them part of the story.</p>
+<p>Solutions to hand-in exercises should be handed in on paper <em>one week</em> after they have been distributed, and are expected to be typeset using LaTeX.</p>
+<p>The following table shows how the final grade will be computed.</p>
+<table style="width:62%;">
+<colgroup>
+<col width="30%">
+<col width="15%">
+<col width="16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Hand-in Assignments</th>
+<th>Report I</th>
+<th>Report II</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>20%</p></td>
+<td><p>40%</p></td>
+<td><p>40%</p></td>
+</tr>
+</tbody>
+</table>
+<h2 id="literature">Literature</h2>
+<ul>
+<li>Theory:
+<ul>
+<li>[LN] Lecture notes. Available on Blackboard, a physical copy can be bought from A-Eskwadraat.</li>
+</ul></li>
+<li>C++
+<ul>
+<li>[BS] <em>Bjarne Stroustrop</em> - The C++ Programming Language</li>
+<li><em>Scott Meyers</em> - Effective Modern C++</li>
+</ul></li>
+</ul>
+<p>Example code can be found at: <a href="http://www.github.com/jwbuurlage/lcsc-code/" class="uri">http://www.github.com/jwbuurlage/lcsc-code/</a></p>
+
+
+</body></html>
